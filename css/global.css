@@ -1,0 +1,526 @@
+*{
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+@font-face{
+    font-family: "Open Sans";
+    src:url("OpenSans-Regular.ttf");
+}
+@font-face{
+    font-family: "High Tide";
+    src:url("hightide.ttf");
+}
+@font-face{
+    font-family: "Hammersmith One";
+    src:url("HammersmithOne.ttf");
+}
+@font-face{
+    font-family: "Archivo Narrow";
+    src:url("ArchivoNarrow-Regular.otf");
+}
+
+@font-face{
+    font-family: "Harabara Mais Demo";
+    src:url("harabara.otf");
+}
+
+@font-face{
+    font-family: "Bromello";
+    src:url("bromello.ttf");
+}
+
+
+body{
+    background: #f0f0f0;
+}
+h1{
+    margin-top: 0;
+    font-family: "Hammersmith One";
+    font-size: 30px;
+}
+h2{
+    font-family: "Hammersmith One";
+     font-size: 20px;
+}
+button{
+      font-family: "Archivo Narrow";
+}
+
+.navbar-inverse{
+    background: #242855;
+    z-index: 10;
+}
+.navbar-brand{
+    font-family: "High Tide";
+    display: none;
+    letter-spacing: 0.5rem;
+}
+
+nav button  span#hamburger{
+    color: white;
+    width: 20px;
+}
+li{
+   text-align: center;
+    text-transform: uppercase
+}
+li:hover{
+    background: #282e62;
+    transition: .4s ease-in-out;
+}
+.wrapper{
+    max-width: 700px;
+    padding:0 20px 0 20px;
+    margin: 0 auto 0 auto;
+}
+div.banner{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.banner section{
+    flex-basis: 100%;
+}
+div.banner section:nth-child(2),div.banner section:nth-child(3),
+div.banner section:nth-child(4),div.banner section:nth-child(5){
+   display: none;
+}
+
+div.ads section.wrapper{
+    background: #242855;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+div.ads section.wrapper section{
+   
+   flex-basis: 100%;
+    padding: 10px;
+}
+.ads .wrapper span{
+     font-family: "Harabara Mais Demo";
+    font-size: 20px;
+}
+button.getTickets{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 4px;
+    border: 2px solid #f44336;
+    width: 130px;
+    height: auto;
+    background-color: #f44336;
+   
+}
+button.getTickets:hover{
+    border: 2px solid #282828;
+}
+
+.wrapper div.band-info {
+    padding-top: 40px;
+    padding-bottom: 40px;     
+}
+.bio span{
+    display: none;
+}
+button.read-more,button.read-less{
+    width: 120px;
+    height: auto;
+    padding: 10px;
+    color: #f0f0f0;
+    background-color: transparent;
+    border: 2px solid #f44336;
+    margin-top: 10px;
+    transition: .5s ease-in-out;
+}
+button.read-less{
+    display: none;
+}
+button.read-more:hover,button.read-less:hover{
+    background-color:#f44336;
+     border: 2px solid #f0f0f0;
+    color: white;
+}
+.band-info-image{
+    display: none;
+}
+
+div.band-stats{
+    padding-top: 50px;
+      padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.band-stats section{
+   
+    padding: 20px;
+    flex-basis: 50%;
+    flex-direction: column;
+    text-align: center;
+
+}
+div.band-stats span.fa{
+        font-size: 30px;
+        color: darkslategray;
+}
+div.band-stats span.fa:hover{
+        transition: .2s ease-in-out;
+}   
+div.band-stats span.fa.fa-heart:hover{
+      color: darkred;
+}
+div.band-stats span.fa.fa-music:hover{
+        color: dodgerblue;
+}
+div.band-stats span.fa.fa-play-circle:hover{
+        color: palegreen;
+}
+div.band-stats span.fa.fa-headphones:hover{
+        color: black;
+}
+div.band-stats span.numbers{
+         font-family: "Bromello";
+        font-size: 25px;
+        font-weight: bold;
+}
+.spotify-sc-yt{
+   background: #282e62;
+    text-align: center;
+    color: ghostwhite;
+}
+.spotify-sc-yt span{
+    color: aquamarine;
+    padding:5px 30px 5px 30px;
+}
+
+.playlists{
+        padding-top:100px;
+        padding-bottom:100px;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+}
+.playlists section{
+        flex-basis: 100%;
+}
+.playlists span{
+        color: gray;
+        font-size: 18px;
+}
+
+table tr:nth-child(even){
+        background-color: lightgray;
+}
+table.table-responsive{
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid transparent;
+}
+table td:nth-child(1){
+    width:  10px;
+}
+table td:nth-child(even){
+    text-transform: capitalize;
+}
+.listen{
+    text-align: center;
+}
+.listen button{
+ background-color: #f44336;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;    
+}
+
+div.albums{
+    display: flex;
+    flex-wrap: wrap;
+      background-color: #282362;
+   
+}
+
+div.albums section{
+    flex-basis: 50%;
+}
+
+div.media{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.media section{
+    flex-basis: 100%;
+}
+iframe{
+    width: 100%;
+    height: 150px;
+    flex-basis: 100%;
+    border:2px solid #f44336;
+    margin-top: 20px;
+    margin-left:;
+}
+
+div.ticket-status{
+    background: #f0f0f0;
+    margin-bottom:30px;
+}
+div.ticket-status section{
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    cursor: pointer;
+}
+div.ticket-status section:hover{
+    background: lightgray;
+}
+div.ticket-status section span.label{
+   
+ background: #f44336;
+margin-left:10px;
+}
+section.tix-status section{
+    color: #282828;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f0f0f0;
+    border-bottom: 1px solid lightgray;
+}
+section.tix-status section span.label{
+    background-color: #f44336;
+}
+/* world tours new */
+
+  .world-tour{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+        align-items: stretch;
+     }
+     div.tour-organizer{
+         background-color: #f0f0f0;
+         flex-basis: 100%;
+          border:1px solid black;
+         margin-bottom: 20px;
+         align-items: stretch;
+     }
+     div.tour-organizer section{
+         padding: 10px;
+         
+        
+         
+     }
+.skewed{
+    background:#f0f0f0;
+    transform: skew(0deg,-10deg)translateY(-35px);
+}
+.con{
+    padding-top: 20px;
+    transform: skew(0deg,10deg);
+}
+
+
+/* end world tours */
+
+span.tour-name{
+    font-weight: bolder;
+    font-size: 20px;
+}
+.tour-organizer span.event-place{
+    font-size: 15px;
+    color: gray;
+}
+.tour-organizer span.event-date{
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: #282828;
+    font-style: italic;
+}
+.tour-organizer button{
+    width: 100%;
+    background: #f44336;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+.tour-organizer button:hover,.listen button:hover{
+    background: transparent;
+    color: #282829;
+    border: 2px solid #f44336;
+    transition: .3s ease-in-out;
+}
+.form-control{
+    border-radius: 0;
+}
+.modal-header{
+    background: #f44336;
+    color: white;
+    text-align: center;
+    font-family: "Hammersmith One";
+    text-transform: uppercase;
+}
+.modal-title{
+    font-size:20px;
+}
+
+.modal-footer button{
+    float: left;
+    background: #f44336;
+    border:1px solid black;
+    color: white;
+}
+.modal-footer button:hover{
+    background: transparent;
+    border: 2px solid #f44336;
+    transition: .2s ease-in-out;
+}
+
+   /* tours-gallery */
+img.portrait{
+    height: 400px; /* 420px */
+    width:100%;
+}
+        .tours-gallery{
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 50px;
+          justify-content: space-between;
+
+        }
+        div.tours-gallery section{
+            position: relative;
+            margin: 10px 0 10px 0;
+           
+              background: transparent;
+        }
+        .tours-gallery img{
+            border: 10px solid white;
+          
+        }
+        .tours-gallery section:nth-child(1), .tours-gallery section:nth-child(2), .tours-gallery section:nth-child(3),
+        .tours-gallery section:nth-child(8), .tours-gallery section:nth-child(9), .tours-gallery section:nth-child(10){
+           /*  flex-basis: 31%; */
+            
+        }
+         .tours-gallery section:nth-child(4){
+           /* flex-basis: 64%; */
+        }
+        .tours-gallery section:nth-child(5){
+           /*  flex-basis: 31%; */
+        }
+  
+        .tours-gallery section:nth-child(6){
+          /*  flex-basis: 31%; */
+
+        }
+         .tours-gallery section:nth-child(7){
+          /*  flex-basis: 64%;   */
+        }
+         .tours-gallery section:nth-child(11),.tours-gallery section:nth-child(12){
+           /*  flex-basis: 47.5%;   */
+        }
+        
+
+          /* end tours-gallery */
+    
+
+.support-bands{
+    padding-top: 20px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+h1.sup-bands{
+    padding-top:120px;
+    font-size: 30px;
+}
+
+.support-bands section h1{
+    font-size: 50px;
+    
+}
+.support-bands section{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-basis: 50%;
+    
+}
+div.pre-footer{
+    padding: 60px 20px 60px 20px;
+    background-color: #282e62;
+    color: ghostwhite;
+}
+div.pre-footer h1{
+     font-size: 30px;
+    text-align: center;
+}
+div.pre-footer span{
+    font-size: 15px;    
+}
+.wrapper p.col-sm-12{
+    text-align: center;
+    font-size: 18px;
+}
+
+div.pre-footer input,button{
+    height: 50px;
+    margin-top: 10px;
+    border:0;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    
+    
+}
+div.pre-footer input{
+     border-bottom: 1px solid ghostwhite;
+background-color:transparent;
+}
+
+div.pre-footer button{
+    margin-top: 50px;
+    background-color: #272727;
+    color: white;
+}
+div.pre-footer button:hover{
+    color: black;
+    background-color: white;
+    transition: .4s ease-in-out;
+    border:2px solid #292929;
+}
+.modal .msgBox{
+    padding: 50px;
+    color: #282829;
+}
+footer{
+    font-family: "Open Sans";
+    border-top:2px solid white;
+    background: #242855;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    line-height: 2;
+}
+@media screen and (min-width:380px) {
+    div.pre-footer{
+        padding: 60px 40px 60px 40px;
+}
+}
+@media screen and (min-width:414px) {
+    div.pre-footer{
+        padding: 60px 45px 60px 45px;
+}
+}
+@media screen and (min-width:512px) {
+    div.pre-footer{
+        padding: 60px;
+}
+    
+}

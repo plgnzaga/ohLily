@@ -1,0 +1,47 @@
+@media screen and (min-width:1024px){
+	 .wrapper{
+    max-width: 2000px;
+    padding:0 150px;
+    margin: 0 auto 0 auto;
+	}
+	div.pre-banner h1{
+		color: #232323;
+		font-size: 45px;
+		background-color: beige;
+		width: 30%;
+		text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	}
+	section.box-image{
+	height: 380px;
+	}
+	div.gallery section.box-quote{ 
+	width: 380px;
+	height: 380px;
+	font-size: 20px;
+	padding:50px;
+	}
+	div.quote-borders{
+	height: 270px;
+	padding:30px;
+	}
+div.gallery section.box:nth-child(24){
+    font-size: 20px;
+}
+	div.gallery section.box-quote:nth-child(14) div.quote-borders,
+div.gallery section.box-quote:nth-child(18) div.quote-borders,
+div.gallery section.box-quote:nth-child(28) div.quote-borders,
+div.gallery section.box-quote:nth-child(32) div.quote-borders{
+    padding:70px 60px;
+    height: 270px;
+}
+div.gallery section.box:nth-child(32),div.gallery section.box:nth-child(31),
+div.gallery section.box:nth-child(13),div.gallery section.box:nth-child(14),
+div.gallery section.box:nth-child(17),div.gallery section.box:nth-child(18),    
+div.gallery section.box:nth-child(27),div.gallery section.box:nth-child(28){
+    height: 380px;
+    flex-basis: 50%;
+}
+
+   
+    
+}
